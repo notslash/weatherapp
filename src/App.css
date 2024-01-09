@@ -5,8 +5,27 @@
 
 .temp{
   color:white;
+  font-size: 40px;  
+  flex-direction: row;
+  margin-left: 20px;
 }
 
 .city{
   color:white;
 }
+
+
+
+.location{
+  
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+.tem{
+  
+  color:white;
+  display: flex;
+  width: fit-content;
+  align-items: center;
+}
+
