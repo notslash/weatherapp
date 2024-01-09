@@ -1,1 +1,12 @@
+.background{
+  height: 100vh;
+  background-color: black;
+}
 
+.temp{
+  color:white;
+}
+
+.city{
+  color:white;
+}
