@@ -1,0 +1,15 @@
+#search_bar{
+    display: flex;
+    padding:10px;
+    border-radius: 15px;
+    
+}
+
+.bar{
+    display: flex;
+    justify-content:center ;
+}
+
+#button_search{
+    border-radius: 10px;
+}

@@ -50,7 +50,7 @@
 .container_column{
   display: flex;
   flex-direction: column;
-  gap:460px
+  gap:20px
   
 }
 
@@ -58,11 +58,22 @@
   display: flex;
   flex-direction: column;
   gap:20px;
-  margin-top:30px;
   align-items: center;
 }
 
 .temp_column{
-  /* display: flex;
-  margin-left: 10px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:370px;
+}
+
+#column_image{
+  border:3px solid green
+}
+
+.time{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
 }
