@@ -7,7 +7,8 @@
   color:white;
   font-size: 40px;  
   flex-direction: row;
-  margin-left: 20px;
+  margin-left: 30px;
+  margin-bottom: 50px;
 }
 
 .city{
@@ -29,3 +30,12 @@
   align-items: center;
 }
 
+
+.columns{
+  column-count:6;
+  column-gap: 40px;
+  column-rule-style: solid;
+  column-rule-color: aqua;
+  color: white;
+  height: 75vh;
+}
