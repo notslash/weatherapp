@@ -1,6 +1,7 @@
 .background{
   height: 100vh;
   background-color: black;
+  
 }
 
 .temp{
@@ -69,11 +70,20 @@
 }
 
 #column_image{
-  border:3px solid green
+  
 }
 
 .time{
   display: flex;
   flex-direction: column;
   gap:10px;
+}
+
+.description{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  position: relative;
+  top:75px;
+  right:160px
+ 
 }

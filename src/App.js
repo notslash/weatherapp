@@ -50,6 +50,7 @@ function App() {
         <div className="tem">
           <img id="test" src={`https://openweathermap.org/img/wn/${weather_data.weather[0].icon}@2x.png`} />
           <div className="location">{weather_data.name}, {format_day(weather_data.dt, "long")}</div>
+          <div className="description"> {weather_data.weather[0].description.charAt(0).toUpperCase()+weather_data.weather[0].description.slice(1)}, Feels like {Math.round(weather_data.main.feels_like)} </div>
         </div>
 
 
@@ -57,7 +58,7 @@ function App() {
 
         <div className="columns">
 
-          {/* <div className="today">{format_day(weather_data.dt, "short")}</div> */}
+          
 
 
 

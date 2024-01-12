@@ -1,15 +1,25 @@
 #search_bar{
     display: flex;
-    padding:10px;
+    /* padding:15px; */
+    width:40%;
     border-radius: 15px;
+    margin-top: 0px;
+    
+    position: absolute;
+    top:120px;
+    padding: 10px;
+    background-color:white;
+    opacity: 80%;
+    
+    
+    
     
 }
 
 .bar{
     display: flex;
-    justify-content:center ;
-}
-
-#button_search{
-    border-radius: 10px;
+    justify-content:center;
+    padding: 10px;
+    
+    
 }
