@@ -45,7 +45,7 @@ function App() {
   return (
     <div className="background">
       <Header />
-      <Searchbar/>
+      <Searchbar setWeatherData={setWeather_data}/>
       {weather_data && <div>
         <div className="tem">
           <img id="test" src={`https://openweathermap.org/img/wn/${weather_data.weather[0].icon}@2x.png`} />
