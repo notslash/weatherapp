@@ -1,0 +1,16 @@
+.backgroud_signup{
+    background-color: black;
+    color:white;
+    height:100vh;
+}
+
+.sign_box{
+    /* display: flex;
+    justify-content: center; */
+}
+
+.sign_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}

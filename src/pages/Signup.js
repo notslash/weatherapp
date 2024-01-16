@@ -2,16 +2,18 @@ import "./signup.css"
 
 const Signup = () => {
     return (
-        <div>
+        <div className ="backgroud_signup">
+            <div className="sign_container">
             <h3>
                 Signup
             </h3>
-            <form>
-                <input type="text">Email</input>
-                <input type="text">Pass</input>
-                <input type="text">Pass</input>
+            <form className="sign_box">
+                <input type="text"/>
+                <input type="text"/>
+                <input type="text"/>
 
             </form>
+            </div>
 
         </div>
     )

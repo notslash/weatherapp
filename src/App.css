@@ -7,9 +7,15 @@
 .temp{
   color:white;
   font-size: 40px;  
-  flex-direction: row;
-  margin-left: 30px;
-  margin-bottom: 50px;
+  /* margin-left: 30px; */
+  border: 1px solid pink;
+  min-width: 80px;
+  text-align: center;
+  /* margin-bottom: 50px; */
+}
+.test{
+  border: 1px solid pink;
+  width: 80px;
 }
 
 .city{
@@ -27,8 +33,11 @@
   
   color:white;
   display: flex;
+  flex-direction: column;
   width: fit-content;
-  align-items: center;
+  align-items: flex-start;
+  border: 1px solid red;
+  min-width: 300px;
 }
 
 
@@ -57,6 +66,7 @@
 
 .temp_day{
   display: flex;
+
   flex-direction: column;
   gap:20px;
   align-items: center;
@@ -75,15 +85,25 @@
 
 .time{
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   gap:10px;
+}
+.weather-widget-col-1{
+  display: flex;
+  width: 100%;
+  /* justify-content: space-between; */
+  align-items: center;
+  border: 1px solid blue;
+  gap: 16px;
 }
 
 .description{
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family:'Lucida ', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 20px;
-  position: relative;
+  /* position: relative;
   top:75px;
-  right:160px
+  right:160px */
  
 }
+
+

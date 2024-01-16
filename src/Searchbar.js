@@ -13,13 +13,14 @@ const Searchbar = ({setWeatherData, setForc}) => {
                 e.preventDefault();
                 console.log(CityName)
                 
+                
+
                 const weather = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${CityName}&appid=${process.env.REACT_APP_OPENWEATHERMAP_KEY}&units=metric`)
                 const forcast = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${CityName}&appid=${process.env.REACT_APP_OPENWEATHERMAP_KEY}&units=metric`)
                 setWeatherData({...weather.data})
                 setForc({...forcast.data})
 
 
-                
                 // const loc = await axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${process.env.REACT_APP_OPENWEATHERMAP_KEY}&units=metric`)
                 // console.log(loc.data)
                 } 

@@ -7,8 +7,8 @@ const Login = () => {
                 login
             </h3>
             <form>
-                <input type="text">Email</input>
-                <input type="text">Pass</input>
+                <input type="text"/>
+                <input type="text"/>
             </form>
 
         </div>
