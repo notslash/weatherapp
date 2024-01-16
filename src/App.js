@@ -4,10 +4,10 @@ import Header from './Header';
 import { useEffect, useState } from "react";
 
 import Searchbar from "./Searchbar"
-import {createContext} from 'react'
+
 import {BrowserRouter, Routes, Route} from "react"
 
-export const myContext = createContext()
+
 
 function App() {
   const [location_data, setLocation_data] = useState(null)
@@ -30,7 +30,7 @@ function App() {
        
 
         const res = await axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${process.env.REACT_APP_OPENWEATHERMAP_KEY}&units=metric`)
-        const forcast = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${CityName}&appid=${process.env.REACT_APP_OPENWEATHERMAP_KEY}`)
+        const forcast = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&appid=${process.env.REACT_APP_OPENWEATHERMAP_KEY}&units=metric`)
         
 
 
@@ -39,7 +39,6 @@ function App() {
         console.log(forcast.data)
         setWeather_data(res.data)
         setForc(forcast.data)
-
       } catch (err) {
         console.error(err)
       } finally {
@@ -47,6 +46,10 @@ function App() {
       }
     })
   }, [])
+
+  // useEffect(() => {
+
+  // },[CityName])
 
   const format_day = (timestamp, formatStyle) => {
     const day = new Date(timestamp * 1000).toLocaleDateString([], { weekday: formatStyle })
@@ -56,7 +59,7 @@ function App() {
   return (
     <div className="background">
       <Header />
-      <Searchbar setWeatherData={setWeather_data}/>
+      <Searchbar setWeatherData={setWeather_data} setForc={setForc}/>
       {weather_data && <div>
         <div className="tem">
           <img id="test" src={`https://openweathermap.org/img/wn/${weather_data.weather[0].icon}@2x.png`} />

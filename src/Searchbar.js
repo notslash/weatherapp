@@ -4,7 +4,7 @@ import { useState } from "react";
 import axios from "axios";
 
 
-const Searchbar = ({setWeatherData}) => {
+const Searchbar = ({setWeatherData, setForc}) => {
     const [CityName, SetCityName] = useState("")
 
     return (
@@ -14,8 +14,9 @@ const Searchbar = ({setWeatherData}) => {
                 console.log(CityName)
                 
                 const weather = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${CityName}&appid=${process.env.REACT_APP_OPENWEATHERMAP_KEY}&units=metric`)
-
+                const forcast = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${CityName}&appid=${process.env.REACT_APP_OPENWEATHERMAP_KEY}&units=metric`)
                 setWeatherData({...weather.data})
+                setForc({...forcast.data})
 
 
                 

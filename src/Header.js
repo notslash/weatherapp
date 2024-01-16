@@ -1,14 +1,21 @@
 import "./Header.css"
 
+import { Link } from "react-router-dom";
 const Header=()=>{
     return(
         <div className="">
            <div className="container">
             <p className="header_text">
                 Health advice group   
-            </p>  <div className="login_container">
-            <p className="login">Login</p>
-            <p className="signup">Sign up</p>
+            </p>
+            
+              <div className="login_container">
+                <button className="login">Login</button>
+                <button className="signup">Sign Up</button>
+          
+          
+          
+          
             </div>
             </div>
             <div className="underline">
