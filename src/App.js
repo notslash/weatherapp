@@ -16,19 +16,24 @@ function App() {
     navigator.geolocation.getCurrentPosition(async (position) => {
       const lat = position.coords.latitude
       const long = position.coords.longitude
+      const CityName=("london")
       try {
         setIsLoading(true)
         const lat = position.coords.latitude
         const long = position.coords.longitude
+       
 
         const res = await axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${process.env.REACT_APP_OPENWEATHERMAP_KEY}&units=metric`)
-        const forcast = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&appid=${process.env.REACT_APP_OPENWEATHERMAP_KEY}&units=metric`)
+        const forcast = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${CityName}&appid=${process.env.REACT_APP_OPENWEATHERMAP_KEY}`)
+        
 
 
+    
         console.log(res.data)
         console.log(forcast.data)
         setWeather_data(res.data)
         setForc(forcast.data)
+
       } catch (err) {
         console.error(err)
       } finally {
@@ -63,6 +68,7 @@ function App() {
 
 
           <div>{forc && <div>
+          
             <div className="forcast">{forc.list.map((weather, i) => {
               if (new Date(weather.dt * 1000).getHours() === 12) 
               { return <div key={i} className="container_column"> <img id="column_image" src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}/>
