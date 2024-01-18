@@ -35,7 +35,7 @@ const Searchbar = ({setWeatherData, setForc}) => {
                 <input onChange={(e)=>SetCityName(e.target.value)} value={CityName} id="search_bar" type="text" placeholder="Search" />
             </form>
             {error&& <div className="error">
-                {error?.response?.data?.message.charAt(0).toUpperCase()+error?.response?.data?.message.slice(1) || "Api error"}
+                {CityName && error?.response?.data?.message.charAt(0).toUpperCase()+error?.response?.data?.message.slice(1) || "Api error"}
         
                     </div>}
             {/* <div >{locationData && locationData.map((location, i) => {

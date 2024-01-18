@@ -17,7 +17,11 @@ const Signup = () => {
             </h3>
             <form className="sign_box" onSubmit={async (e) => {
                 e.preventDefault()
-                const res= await axios.get(`http://127.0.0.1:8000/api/data/new-user`)
+                const res= await axios.post(`http://127.0.0.1:8000/api/data/new-user`, {
+                    username, password, password2
+                } )
+
+                console.log(res.data)
 
                 setUser({...res.data})
             }}>
@@ -28,8 +32,8 @@ const Signup = () => {
 
             </form>
             </div>
-            <div>
-                {user && user.username}
+            <div style={{color: "white"}}>
+            {user && user.user.username}
             </div>
 
         </div>
