@@ -1,0 +1,18 @@
+.login-page{
+    height: 90vh;
+
+    background-color: black;
+    color:white;
+}
+.login-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-container{
+    display: flex;
+    justify-content:center ;
+    flex-direction: column;
+    width: 30%;
+}

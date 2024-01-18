@@ -2,15 +2,17 @@ import "./Login.css"
 
 const Login = () => {
     return (
-        <div>
-            <h3>
-                login
+        <div className="login-page">
+            <div className="login-container">
+            <h3 className="login-header">
+                Login
             </h3>
-            <form>
+            <form className="form-container">
                 <input type="text"/>
                 <input type="text"/>
+                <button className="submit-button">Submit</button>
             </form>
-
+</div>
         </div>
     )
 }

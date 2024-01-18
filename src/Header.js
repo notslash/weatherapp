@@ -1,18 +1,21 @@
 import "./Header.css"
 
+import { useNavigate } from "react-router-dom";
+
 import { Link } from "react-router-dom";
 const Header = () => {
+    // const navigate=useNavigate()
     return (
-        <div className="">
+        <div className="background-heading">
             <div className="container">
                 <div className="header-spacer"/>
-                <p className="header_text">
+                <a className="header_text" href="/">
                     Health advice group
-                </p>
+                </a>
 
                 <div className="login_container">
-                    <button className="auth-button">Login</button>
-                    <button className="auth-button">Sign Up</button>
+                    <a className="auth-button" href="/login" >Login</a>
+                    <a className="auth-button" href="/signup" >Sign Up</a>
                 </div>
             </div>
             <div className="underline">

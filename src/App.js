@@ -58,9 +58,9 @@ function App() {
 
   return (
     <div className="background">
-      <Header />
+      {/* <Header /> */}
       <Searchbar setWeatherData={setWeather_data} setForc={setForc} />
-      {weather_data && <div>
+      {weather_data && <>
         <div className="tem">
 
           <div className="weather-widget-col-1">
@@ -80,31 +80,24 @@ function App() {
 
         <div className="columns">
 
+          {forc && <>
 
-
-
-
-          <div>{forc && <div>
-
-            <div className="forcast">{forc.list.map((weather, i) => {
+            {forc.list.map((weather, i) => {
               if (new Date(weather.dt * 1000).getHours() === 12) {
                 return <div key={i} className="container_column"> <img id="column_image" src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} />
-                  <div className="temp_day"><div>{format_day(weather.dt, "short")}</div>
-                    <div className="temp_column"><div>{Math.round(weather.main.temp)}°</div>
-                      <div>
-                        <div>{new Date(weather.dt * 1000).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })} PM</div></div></div>
-                  </div></div>
+                  <div className="temp_day">{format_day(weather.dt, "short")}</div>
+                  <div className="temp_column">{Math.round(weather.main.temp)}°</div>
+                  <div className="temp_time">{new Date(weather.dt * 1000).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })} PM</div>
+                </div>
               } else { return null }
             })}
 
-            </div>
-
-          </div>}</div>
+          </>}
 
 
         </div>
 
-      </div>
+      </>
       }
 
 
