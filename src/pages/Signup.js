@@ -2,8 +2,8 @@ import "./signup.css"
 
 import axios from "axios";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-import Modal from "react-modal";
 
 const Signup = () => {
     const [username, setusername] = useState('')
@@ -11,6 +11,8 @@ const Signup = () => {
     const [password2, SetPassword2] = useState("")
     const [userData, setUserData] = useState(null)
     const [error, setError] = useState(false)
+
+    const navigate=useNavigate()
 
 
     
@@ -34,8 +36,9 @@ const Signup = () => {
                         
                         console.log(res.data)
                         
-                        if(password!==password2){setError(true)}
+                        // if(password!==password2){setError(true)}
                         setUserData({ ...res.data })
+                        navigate("/profile")
                     } catch (error) {
                         setError(true)
                     }
@@ -51,7 +54,7 @@ const Signup = () => {
             <div style={{ color: "white" }}>
                 {error &&<div>Passwords do not match</div>}
                 {userData && <div>Welcome: {userData.user.username}</div>}
-                if(password==password2){<a className="auth-button" href="/profile">profile</a>}
+                
             </div>
 
             {/* {error&& <div>Passwords do not match</div>} */}
