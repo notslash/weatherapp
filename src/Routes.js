@@ -3,6 +3,7 @@ import { BrowserRouter, Routes } from "react-router-dom";
 import App from "./App";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import Profile from "./pages/Profile";
 
 
 const Router=()=>{
@@ -12,6 +13,7 @@ const Router=()=>{
             <Route path="/" element={<App/>}/>
             <Route path="Login" element={<Login/>}/>
             <Route path ='/Signup' element={<Signup/>}/>
+            <Route path ="/profile"element={<Profile/>}/>
 
         </Routes>
         </BrowserRouter>

@@ -6,7 +6,7 @@ import axios from "axios";
 
 const Searchbar = ({setWeatherData, setForc}) => {
     const [CityName, SetCityName] = useState("")
-    const [error,setError]=useState("")
+    const [error,setError]=useState(null)
 
     return (
         <div className="searchbarcont">
@@ -14,8 +14,10 @@ const Searchbar = ({setWeatherData, setForc}) => {
                 e.preventDefault();
                 console.log(CityName)
                 
+                setError(null)
 
                 try{
+                    
                     const weather = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${CityName}&appid=${process.env.REACT_APP_OPENWEATHERMAP_KEY}&units=metric`)
                     const forcast = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${CityName}&appid=${process.env.REACT_APP_OPENWEATHERMAP_KEY}&units=metric`)
                     setWeatherData({...weather.data})
@@ -32,10 +34,10 @@ const Searchbar = ({setWeatherData, setForc}) => {
                 } 
                 
             }>
-                <input onChange={(e)=>SetCityName(e.target.value)} value={CityName} id="search_bar" type="text" placeholder="Search" />
+                <input onChange={(e)=>SetCityName(e.target.value)} value={CityName} id="search_bar" type="text" placeholder="Search a city" />
             </form>
             {error&& <div className="error">
-                {CityName && error?.response?.data?.message.charAt(0).toUpperCase()+error?.response?.data?.message.slice(1) || "Api error"}
+                {CityName && error?.response?.data?.message.charAt(0).toUpperCase()+error?.response?.data?.message.slice(1) || "Please enter a location"}
         
                     </div>}
             {/* <div >{locationData && locationData.map((location, i) => {
