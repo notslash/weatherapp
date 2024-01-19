@@ -3,26 +3,17 @@ import axios from "axios"
 import { useState } from "react"
 
 import { useEffect } from "react"
+import { json } from "react-router-dom"
 
-const Profile =()=>{
-    const [userData, setUserData] = useState(null)
-    useEffect=(()=>{
-        const get_data =async()=>{
+const Profile = () => {
 
-            const res = await axios.post(`http://127.0.0.1:8000/api/data`)
-            setUserData({...res.data})
-            console.log(res)
-            localStorage.setItem("user",JSON.stringify(res.data))
-            
-        }
-        
-        
-})
 
-    return(
-        <div>
-        <div className="background_profile">Profile </div>
-        {userData && <div>Welcome: {localStorage.getItem("user")}</div>}
+
+
+    return (
+        <div className="background_profile">
+            <div className="profile">Profile </div>
+            {<div className="welcome_text">Welcome: {JSON.parse(localStorage.getItem("user")).username}</div>}
         </div>
 
     )

@@ -38,6 +38,7 @@ const Signup = () => {
                         
                         // if(password!==password2){setError(true)}
                         setUserData({ ...res.data })
+                        localStorage.setItem("user",JSON.stringify(res.data.user))
                         navigate("/profile")
                     } catch (error) {
                         setError(true)
@@ -53,7 +54,7 @@ const Signup = () => {
             </div>
             <div style={{ color: "white" }}>
                 {error &&<div>Passwords do not match</div>}
-                {userData && <div>Welcome: {userData.user.username}</div>}
+                
                 
             </div>
 
