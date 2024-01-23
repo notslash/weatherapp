@@ -40,7 +40,9 @@ const Profile = () => {
                     } catch (error) {
                         setError(true)
                     }
-
+                    
+                    
+                    console.log("hello")
                 }}>
                     <input type="text" onChange={(e) => setusername(e.target.value)} value={username} />
                     <input type="text" onChange={(e) => SetPassword(e.target.value)} value={password} />
@@ -50,6 +52,8 @@ const Profile = () => {
             </div>
             <div style={{ color: "white" }}>
                 {error &&<div>Email or password is incorrect</div>}
+                {userData && <div>Welcome: {userData.user.username}</div>}
+           
                 
                 
             </div>

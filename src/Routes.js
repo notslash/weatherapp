@@ -4,6 +4,7 @@ import App from "./App";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Profile from "./pages/Profile";
+import Airq from "./Airq";
 
 
 const Router=()=>{
@@ -14,6 +15,7 @@ const Router=()=>{
             <Route path="Login" element={<Login/>}/>
             <Route path ='/Signup' element={<Signup/>}/>
             <Route path ="/profile"element={<Profile/>}/>
+            <Route path="/Airq" element={<Airq/>}/>
 
         </Routes>
         </BrowserRouter>
