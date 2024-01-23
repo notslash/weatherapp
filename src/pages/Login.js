@@ -52,7 +52,7 @@ const Profile = () => {
             </div>
             <div style={{ color: "white" }}>
                 {error &&<div>Email or password is incorrect</div>}
-                {userData && <div>Welcome: {userData.user.username}</div>}
+                {/* {userData && <div>Welcome: {userData.user.username}</div>} */}
            
                 
                 
