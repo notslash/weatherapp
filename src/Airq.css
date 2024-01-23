@@ -1,2 +1,16 @@
-.background{
+.background_air{
+    background-color: black;
+    height: 100vh;
+    color:white;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.airquality{
+display: flex;
+justify-content: center;
+/* flex-direction: column; */
+border: 2px solid green;
 }
