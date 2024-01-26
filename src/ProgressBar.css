@@ -1,17 +1,23 @@
 .progress-bar-container{
-    height: 50px;
+    height: 20px;
     background-color: grey;
     width: 100%;
+    border-radius: 10px;
+
+    
 }
 
 .progress-gauge{
     background-color: green;
-    height: 50px;
+    height: 20px;
+    border-radius: 10px;
+    
 }
 
 .progress-gauge-red {
     background-color: red;
-    height: 50px;
+    height: 20px;
+    
 }
 
 
