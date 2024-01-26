@@ -5,7 +5,7 @@ import axios from "axios";
 
 import { useState } from "react";
 
-
+import ProgressBar from "./ProgressBar";
 
 
 const Airq=()=>{
@@ -26,13 +26,17 @@ const Airq=()=>{
     })},[])
     return (
     <div className="background_air">
+        
     
     {display&& <div className="airquality">
+
+   
         <p className="heading_air">Your location</p>
 
         <div className="spacing">
         <div>Carbon Monoxide {display.list[0].components.co}</div>
-        <div><progress id="co" value={display.list[0].components.co} max="300">{display.list[0].components.co}</progress></div>
+        {/* <div><progress id="co" value={display.list[0].components.co} max="300">{display.list[0].components.co}</progress></div> */}
+        <ProgressBar value={display.list[0].components.co} max_val={800}/> 
         </div>
 
         <div className="spacing">
