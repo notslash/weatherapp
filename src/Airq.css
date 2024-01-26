@@ -30,3 +30,27 @@
     font-size:40px;
     font-weight: 700;
 }
+
+.spacing{
+    gap:10px;
+    display:flex ;
+    flex-direction: row;
+}
+/* progress[value]{
+    --color:blue;
+
+} */
+
+progress[value] {
+    --color: red; /* the progress color */
+    --background: lightgrey; /* the background color */
+  
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    width: 200px;
+    margin: 0 10px;
+    border-radius: 10em;
+    background: var(--background);
+  }
