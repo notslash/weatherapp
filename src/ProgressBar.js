@@ -9,7 +9,7 @@ export default function ProgressBar({value, max_val}){
 
     return(
         <div className="progress-bar-container" >
-            <div style={{"width" : `${percentage}%`, "backgroundColor": percentage >= 60 ? "red" : "green"}} className="progress-gauge"/>
+            <div style={{"width" : `${percentage}%`, "backgroundColor": percentage >= 60 ? "red" : "green"}} className="progress-gauge"/>{percentage.toFixed(3)}%
         </div>
     )
 }
