@@ -1,7 +1,7 @@
 import "./Profile.css"
 import axios from "axios"
 import { useState } from "react"
-
+import "./Login.css"
 import { useEffect } from "react"
 import { json } from "react-router-dom"
 import { useNavigate } from "react-router-dom";
@@ -21,11 +21,11 @@ const Profile = () => {
         <div className="backgroud_signup">
             <div className="log_container">
                 <h3 className="login-header">
-                    Profile
+                    Login
                 </h3>
 
 
-                <form className="Profile_box" onSubmit={async (e) => {
+                <form className="login_box" onSubmit={async (e) => {
                     try {
                         e.preventDefault()
                         setError(false)
@@ -44,9 +44,12 @@ const Profile = () => {
                     
                     console.log("hello")
                 }}>
+                    
                     <input type="text" onChange={(e) => setusername(e.target.value)} value={username} />
                     <input type="text" onChange={(e) => SetPassword(e.target.value)} value={password} />
                     <button className="submit-button">Submit</button>
+                    
+                    
 
                 </form>
             </div>

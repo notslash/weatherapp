@@ -21,3 +21,14 @@
     width:80px;
 
 }
+
+.change_password{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    
+}
+
+.change_form{
+    display: flex;
+}

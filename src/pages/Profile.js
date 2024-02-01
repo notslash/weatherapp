@@ -16,7 +16,9 @@ const Profile = () => {
     
     async function login(){
         
-    const res = await axios.get(`http://127.0.0.1:8000/api/data/new-pass=${JSON.parse(localStorage.getItem("user")).username}&new_pass=${newpass}`)
+        if (newpass!=newpass2){alert("passwords need to match");
+         return;}
+    const res = await axios.put(`http://127.0.0.1:8000/api/data/new-pass?username=${JSON.parse(localStorage.getItem("user")).username}&new_pass=${newpass}`)
     console.log(res.data)
     navigate("/login")
     }
@@ -26,13 +28,13 @@ return (
             <div className="profile">Profile </div>
             {<div className="welcome_text">Welcome: {JSON.parse(localStorage.getItem("user")).username}</div>}
             <button id="airq_button" onClick={() => navigate("/airq")}>Air quality</button>
-            <form onSubmit={async (e)=>{e.preventDefault(); await login();}}>
-                <div>
+            <form className="change_password" onSubmit={async (e)=>{e.preventDefault(); login();}}>
+                <div className="change_form">
                     change your password
                 </div>
-                <input placeholder="enter new password" onChange={(e)=>Setnewpass(e.target.value)} value={newpass}/>
-                <input placeholder="enter new password" onChange={(e)=>Setnewpass2(e.target.value)} value={newpass2}/>
-
+                <input type="password" placeholder="enter new password" onChange={(e)=>Setnewpass(e.target.value)} value={newpass}/>
+                <input type="password" placeholder="enter new password" onChange={(e)=>Setnewpass2(e.target.value)} value={newpass2}/>
+                <input type="submit" value="submit"/>
             </form>
             
         </div>
