@@ -27,15 +27,22 @@ return (
     <div className="background_profile">
             <div className="profile">Profile </div>
             {<div className="welcome_text">Welcome: {JSON.parse(localStorage.getItem("user")).username}</div>}
-            <button id="airq_button" onClick={() => navigate("/airq")}>Air quality</button>
+            <div className="change_form">
+                {/* <button id="airq_button" onClick={() => navigate("/airq")}>Air quality</button> */}
             <form className="change_password" onSubmit={async (e)=>{e.preventDefault(); login();}}>
-                <div className="change_form">
-                    change your password
+                <div className="title_pass">
+                    change your password:
                 </div>
                 <input type="password" placeholder="enter new password" onChange={(e)=>Setnewpass(e.target.value)} value={newpass}/>
                 <input type="password" placeholder="enter new password" onChange={(e)=>Setnewpass2(e.target.value)} value={newpass2}/>
                 <input type="submit" value="submit"/>
             </form>
+            </div>
+
+            <div>
+                <Airq/>
+            </div>
+            
             
         </div>
 
