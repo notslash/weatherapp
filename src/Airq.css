@@ -46,12 +46,31 @@
 
 
 .top-bar{
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
+    text-decoration: none;
+    padding-right: 10px;
+}
+    a:hover{
+        font-size:31px
+    }
+
+
+a:visited {
+    color: white;
+
+}
+
+
+.max_amount{
+display: flex;
 }
 
 
 
 
-
-
+.bar_row{
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+}

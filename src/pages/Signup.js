@@ -45,9 +45,9 @@ const Signup = () => {
                     }
 
                 }}>
-                    <input type="text" onChange={(e) => setusername(e.target.value)} value={username} />
-                    <input type="text" onChange={(e) => SetPassword(e.target.value)} value={password} />
-                    <input type="text" onChange={(e) => SetPassword2(e.target.value)} value={password2} />
+                    <input type="text" onChange={(e) => setusername(e.target.value)} value={username} placeholder="Username"/>
+                    <input type="password" onChange={(e) => SetPassword(e.target.value)} value={password} placeholder="Passsword" />
+                    <input type="password" onChange={(e) => SetPassword2(e.target.value)} value={password2} placeholder="Password" />
                     <button className="submit-button">Submit</button>
 
                 </form>

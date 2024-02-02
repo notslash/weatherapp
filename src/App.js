@@ -73,6 +73,11 @@ function App() {
             <div className="temp">{Math.round(weather_data.main.temp)}°</div>
             <div className="description"> {weather_data.weather[0].description.charAt(0).toUpperCase() + weather_data.weather[0].description.slice(1)}, Feels like {Math.round(weather_data.main.feels_like)} </div>
           </div>
+            <div className="drink_water">
+              {weather_data.main.temp>22 &&
+              <p > You should be drinking water every hour</p>
+              }
+            </div>
         </div>
 
 
