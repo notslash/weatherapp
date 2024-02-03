@@ -1,4 +1,4 @@
-const carbon=()=>{
+const Carbon=()=>{
     return(
         <div>
         hello
@@ -6,4 +6,4 @@ const carbon=()=>{
     )
 }
 
-export default carbon;
+export default Carbon;

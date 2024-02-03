@@ -41,41 +41,41 @@ const Airq=()=>{
         </div>
 
         <div className="spacing">
-        <div className="bar_row"><div><a className="top-bar" href="/login">Ammonia</a>- {Math.round(display.list[0].components.nh3)} μg/m3 </div>
+        <div className="bar_row"><div><a className="top-bar" href="/Ammonia">Ammonia</a>- {Math.round(display.list[0].components.nh3)} μg/m3 </div>
         <div className="air-range">{Math.round(display.list[0].components.nh3)} - 100 μg/m3</div></div>
         <ProgressBar value={display.list[0].components.nh3} max_val={100}/>
         
         </div>
 
         <div className="spacing">
-        <div className="bar_row"><div><a className="top-bar" href="/login">Nitrogen dioxide</a>- {Math.round(display.list[0].components.no2)} μg/m3</div>
+        <div className="bar_row"><div><a className="top-bar" href="/Nitrogen">Nitrogen dioxide</a>- {Math.round(display.list[0].components.no2)} μg/m3</div>
          <div className="air-range">{Math.round(display.list[0].components.no2)} - 200 μg/m3</div></div>
         <ProgressBar value={display.list[0].components.no2} max_val={200}/>
         
         </div>
 
         <div className="spacing">
-        <div className="bar_row"><div><a className="top-bar" href="/login">Ozone</a>-  {Math.round(display.list[0].components.o3)} μg/m3 </div>
+        <div className="bar_row"><div><a className="top-bar" href="/Ozone">Ozone</a>-  {Math.round(display.list[0].components.o3)} μg/m3 </div>
         <div className="air-range">{Math.round(display.list[0].components.o3)} - 180 μg/m3</div></div>
         <ProgressBar value={display.list[0].components.o3} max_val={180}/>
         
         </div>
 
         <div className="spacing">
-        <div className="bar_row"><div><a className="top-bar" href="/login">Particals(2.5µm)</a>- {Math.round(display.list[0].components.pm2_5)} μg/m3</div>
+        <div className="bar_row"><div><a className="top-bar" href="/Particals2">Particals(2.5µm)</a>- {Math.round(display.list[0].components.pm2_5)} μg/m3</div>
         <div className="air-range">{Math.round(display.list[0].components.pm2_5)} - 75 μg/m3</div></div>
         <ProgressBar value={display.list[0].components.pm2_5} max_val={75}/>
         </div>
 
         <div className="spacing">
-        <div className="bar_row"><div><a className="top-bar" href="/login">Particals(10µm)</a> - {Math.round(display.list[0].components.pm10)} μg/m3 </div>
+        <div className="bar_row"><div><a className="top-bar" href="/Particals1">Particals(10µm)</a> - {Math.round(display.list[0].components.pm10)} μg/m3 </div>
         <div className="air-range">{Math.round(display.list[0].components.pm10)} - 200 μg/m3</div></div>
         <ProgressBar value={display.list[0].components.pm10} max_val={200}/>
         
         </div>
 
         <div className="spacing">
-        <div className="bar_row"><div><a className="top-bar" href="/login">Sulphur</a>- {Math.round(display.list[0].components.so2)} μg/m3 </div>
+        <div className="bar_row"><div><a className="top-bar" href="/Sulphur">Sulphur</a>- {Math.round(display.list[0].components.so2)} μg/m3 </div>
         <div className="air-range">{Math.round(display.list[0].components.so2)} - 350 μg/m3</div></div>
         <ProgressBar value={display.list[0].components.so2} max_val={350}/>
         
