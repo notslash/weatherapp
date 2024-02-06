@@ -21,7 +21,7 @@
 .auth-button{
     color:white;
     min-width: 120px;
-    padding: 8px 16px;
+    /* padding: 8px 16px; */
     background-color: #5f5f5f;
     /* cursor: pointer; */
     text-decoration: none;
@@ -29,7 +29,7 @@
 
     &:hover{
         transition: 0.5s;
-        padding: px;
+
     }
 
 }
