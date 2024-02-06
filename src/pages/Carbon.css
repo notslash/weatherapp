@@ -6,17 +6,20 @@
 }
 
 .carbon_header{
+    display: flex;
 
-    margin-left: 20px;
     height: fit-content;
+    justify-content: center;
 
 
 }
 
 .grid_cotainer{
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto ;
+    grid-template-columns: auto auto auto auto  ;
+    margin-top: 10px;
 }
 .grid_item{
     border: 1px solid white;
+    padding:90px
 }
