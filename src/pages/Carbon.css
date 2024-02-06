@@ -10,6 +10,7 @@
 
     height: fit-content;
     justify-content: center;
+    padding-top: 10px;
 
 
 }
@@ -21,5 +22,22 @@
 }
 .grid_item{
     border: 1px solid white;
-    padding:90px
+    padding:100px
+}
+
+.color_level1{
+    background-color: green;
+    height: 20px;
+    width: 273%;
+    position: relative;
+    bottom:100px;
+    right: 100px;
+}
+.color_level2{
+    background-color: yellow;
+    height: 20px;
+    width: 257%;
+    position: relative;
+    bottom:100px;
+    right: 99px;
 }

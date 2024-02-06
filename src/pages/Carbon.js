@@ -4,8 +4,14 @@ const Carbon=()=>{
         <div className="background">
             <h2 className="carbon_header">Carbon Monoxide</h2>
             <div className="grid_cotainer">
-                <div className="grid_item">0-3 ppm</div>
-                <div className="grid_item">9-10 ppm</div>
+                <div className="grid_item">
+                    <div className="color_level1"></div>
+                    0-3 ppm
+                </div>
+                <div className="grid_item">
+                <div className="color_level2"></div>
+                9-10 ppm
+                </div>
                 <div className="grid_item">25-35 ppm</div>
                 <div className="grid_item">90-100 ppm</div>
                 <div className="grid_item">Normal carbon levels</div>
