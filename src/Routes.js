@@ -6,6 +6,8 @@ import Signup from "./pages/Signup";
 import Profile from "./pages/Profile";
 import Airq from "./Airq";
 import Carbon from "./pages/Carbon"
+import Nitrogen from "./pages/Nitrogen"
+import Ozone from "./pages/Ozone";
 
 const Router=()=>{
     return(
@@ -17,7 +19,9 @@ const Router=()=>{
             <Route path ="/profile"element={<Profile/>}/>
             <Route path="/Airq" element={<Airq/>}/>
             <Route path="/Carbon" element={<Carbon/>}/>
-
+            <Route path="/Nitrogen" element={<Nitrogen/>}/>
+            <Route path="/Ozone" element={<Ozone/>}/>
+            
         </Routes>
         </BrowserRouter>
 
