@@ -8,6 +8,7 @@ import Airq from "./Airq";
 import Carbon from "./pages/Carbon"
 import Nitrogen from "./pages/Nitrogen"
 import Ozone from "./pages/Ozone";
+import Ammonia from "./pages/Ammonia";
 
 const Router=()=>{
     return(
@@ -21,6 +22,7 @@ const Router=()=>{
             <Route path="/Carbon" element={<Carbon/>}/>
             <Route path="/Nitrogen" element={<Nitrogen/>}/>
             <Route path="/Ozone" element={<Ozone/>}/>
+            <Route path="Ammonia" element={<Ammonia/>}/>
             
         </Routes>
         </BrowserRouter>

@@ -12,8 +12,14 @@ const Carbon=()=>{
                 <div className="color_level2"></div>
                 9-10 ppm
                 </div>
-                <div className="grid_item">25-35 ppm</div>
-                <div className="grid_item">90-100 ppm</div>
+                <div className="grid_item">
+                <div className="color_level3"></div>
+                    25-35 ppm
+                    </div>
+                <div className="grid_item">
+                <div className="color_level4"></div>
+                    90-100 ppm
+                </div>
                 <div className="grid_item">Normal carbon levels</div>
                 <div className="grid_item">You may expience dizzyness or feel nousious</div>
                 <div className="grid_item">You may expience symptoms after 6-8 hours</div>

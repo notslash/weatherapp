@@ -28,15 +28,32 @@
 .color_level1{
     background-color: green;
     height: 20px;
-    width: 273%;
+    width: 177%;
     position: relative;
     bottom:100px;
     right: 100px;
+    margin-left: 2px;
 }
 .color_level2{
     background-color: yellow;
     height: 20px;
-    width: 257%;
+    width: 173%;
+    position: relative;
+    bottom:100px;
+    right: 99px;
+}
+.color_level3{
+    background-color: orange;
+    height: 20px;
+    width: 173%;
+    position: relative;
+    bottom:100px;
+    right: 99px;
+}
+.color_level4{
+    background-color: red;
+    height: 20px;
+    width: 173%;
     position: relative;
     bottom:100px;
     right: 99px;
