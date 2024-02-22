@@ -1,11 +1,35 @@
 const Ozone=()=>{
     return(
         <div className="background">
-            <h2>
-        Ozone
-        </h2> 
-        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in tortor in enim facilisis tempor quis sit amet ante. Pellentesque pellentesque enim at erat dignissim molestie. Suspendisse potenti. Donec ultricies in dolor a convallis. Praesent fringilla placerat nulla sit amet ullamcorper. Vestibulum venenatis ultrices diam, sed aliquet mauris pulvinar et. Curabitur eleifend leo vitae sapien aliquam, eu malesuada nibh imperdiet. Maecenas quis consequat dui. Curabitur vitae sem non felis pharetra tincidunt non et dolor. Sed ultrices quam metus, at pellentesque sem volutpat at. Praesent sagittis erat felis, vel eleifend ante blandit sed. Duis vel laoreet lectus, vitae interdum est. Nullam nunc tortor, ultricies nec magna non, pellentesque scelerisque tellus. Phasellus nec faucibus dolor. Integer nisi eros, dictum gravida ullamcorper eget, elementum in ex. Mauris risus magna, blandit et tristique eget, iaculis at ligula. Praesent nec congue dui. Curabitur orci metus, egestas ac lectus in, consequat sodales urna. Praesent vel metus eget justo posuere sodales facilisis viverra metus. Phasellus dolor quam, bibendum sodales felis eu, aliquet elementum odio. Integer in ipsum ultrices, consectetur risus in, sollicitudin massa. Nulla nec ullamcorper neque. Nam eu nisl neque. Quisque et ante nunc. Vestibulum interdum at quam vel pretium. Vivamus dignissim nunc leo, non feugiat leo auctor eu. Ut sit amet laoreet nisi. Ut pretium dui ex. Aenean auctor augue id urna volutpat, sed vestibulum velit ornare. Nulla sit amet volutpat lectus. Cras luctus ultrices lorem sed ornare.</div>
-        </div>
+        <h2 className="carbon_header">Ozone</h2>
+            <div className="grid_cotainer">
+                <div className="grid_item">
+                    <div className="color_level1"></div>
+                    0-0.06 ppm
+                </div>
+                <div className="grid_item">
+                <div className="color_level2"></div>
+                0.06-0.1 ppm
+                </div>
+                <div className="grid_item">
+                <div className="color_level3"></div>
+                    0.1-0.14 ppm
+                    </div>
+                <div className="grid_item">
+                <div className="color_level4"></div>
+                    0.14-0.2 ppm
+                </div>
+                <div className="grid_item">Normal Ozone levels</div>
+                <div className="grid_item">You may expience uncomfortable nausea</div>
+                <div className="grid_item">You may expience may experience slight irritations</div>
+                <div className="grid_item">You may expience irritation to the body</div>
+                <div className="grid_item">We would say you could stay in these conditions for more then 8 hours</div>
+                <div className="grid_item">We recommend you do not stay in these conditions for more then 8 hours</div>
+                <div className="grid_item">We recommend you do not stay in these conditions for more then 1 hour</div>
+                <div className="grid_item">We recommend you do not stay in these conditions for more then 15 minutes</div>
+
+            </div>
+            </div>
     )
 }
 

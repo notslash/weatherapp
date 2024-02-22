@@ -9,7 +9,9 @@ import Carbon from "./pages/Carbon"
 import Nitrogen from "./pages/Nitrogen"
 import Ozone from "./pages/Ozone";
 import Ammonia from "./pages/Ammonia";
-
+import Particals2 from "./pages/Particals2";
+import Particals1 from "./pages/Particals1";
+import Sulphur from "./pages/Sulphur"
 const Router=()=>{
     return(
         <BrowserRouter>
@@ -23,6 +25,10 @@ const Router=()=>{
             <Route path="/Nitrogen" element={<Nitrogen/>}/>
             <Route path="/Ozone" element={<Ozone/>}/>
             <Route path="Ammonia" element={<Ammonia/>}/>
+            <Route path="Particals2" element={<Particals2/>}/>
+            <Route path="Particals1" element={<Particals1/>}/>
+            <Route path="Sulphur" element={<Sulphur/>}/>
+
             
         </Routes>
         </BrowserRouter>

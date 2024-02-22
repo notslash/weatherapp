@@ -5,19 +5,19 @@ const Ammonia=()=>{
             <div className="grid_cotainer">
                 <div className="grid_item">
                     <div className="color_level1"></div>
-                    0-3 ppm
+                    0-0.003 ppm
                 </div>
                 <div className="grid_item">
                 <div className="color_level2"></div>
-                9-30 ppm
+                0.009-0.03 ppm
                 </div>
                 <div className="grid_item">
                 <div className="color_level3"></div>
-                    30-90 ppm
+                    0.03-0.09 ppm
                     </div>
                 <div className="grid_item">
                 <div className="color_level4"></div>
-                    100-300 ppm
+                    0.1-0.3 ppm
                 </div>
                 <div className="grid_item">Normal Ammonia levels</div>
                 <div className="grid_item">You may expience uncomfortable breathing and nausea</div>

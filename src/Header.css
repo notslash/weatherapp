@@ -19,6 +19,7 @@
 }
 
 .auth-button{
+    display: flex;
     color:white;
     min-width: 120px;
     /* padding: 8px 16px; */

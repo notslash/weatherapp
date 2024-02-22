@@ -6,19 +6,19 @@ const Carbon=()=>{
             <div className="grid_cotainer">
                 <div className="grid_item">
                     <div className="color_level1"></div>
-                    0-3 ppm
+                    0-0.003 ppm
                 </div>
                 <div className="grid_item">
                 <div className="color_level2"></div>
-                9-10 ppm
+                0.009-0.01 ppm
                 </div>
                 <div className="grid_item">
                 <div className="color_level3"></div>
-                    25-35 ppm
+                    0.025-0.035 ppm
                     </div>
                 <div className="grid_item">
                 <div className="color_level4"></div>
-                    90-100 ppm
+                    0.09-0.1 ppm
                 </div>
                 <div className="grid_item">Normal carbon levels</div>
                 <div className="grid_item">You may expience dizzyness or feel nousious</div>
