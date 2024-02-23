@@ -23,6 +23,14 @@ const Profile = () => {
     navigate("/login")
     }
 
+    function validateForm(){
+        if (newpass2.length<8 & newpass.length<8){
+            alert("characters less than 8")
+            Setnewpass(null)
+            Setnewpass2(null)
+        }
+    }
+
 return (
     <div className="background_profile">
             <div className="profile">Profile </div>
@@ -35,7 +43,7 @@ return (
                 </div>
                 <input type="password" placeholder="enter new password" onChange={(e)=>Setnewpass(e.target.value)} value={newpass}/>
                 <input type="password" placeholder="enter new password" onChange={(e)=>Setnewpass2(e.target.value)} value={newpass2}/>
-                <input type="submit" value="submit"/>
+                <input type="submit" value="submit"  onClick={validateForm}/>
             </form>
             </div>
 
