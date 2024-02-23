@@ -15,6 +15,14 @@ const Signup = () => {
     const navigate=useNavigate()
 
 
+    function valid_sign(){
+        if (password2.length<8 & password.length<8){
+            alert("characters less than 8")
+            SetPassword(null)
+            SetPassword2(null)
+        }
+    }
+
     
     return (
         <div className="backgroud_signup">
@@ -48,12 +56,12 @@ const Signup = () => {
                     <input type="text" onChange={(e) => setusername(e.target.value)} value={username} placeholder="Username"/>
                     <input type="password" onChange={(e) => SetPassword(e.target.value)} value={password} placeholder="Passsword" />
                     <input type="password" onChange={(e) => SetPassword2(e.target.value)} value={password2} placeholder="Password" />
-                    <button className="submit-button">Submit</button>
+                    <input type="submit" value="submit"/>
 
                 </form>
             </div>
             <div style={{ color: "white" }}>
-                {error &&<div>Passwords do not match</div>}
+                {error &&<div>Passswords do not match</div>}
                 
                 
             </div>

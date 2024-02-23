@@ -53,7 +53,7 @@ const Profile = () => {
                     <input type="text" onChange={(e) => setusername(e.target.value)} value={username} placeholder="Username"/>
                     <input type="password" onChange={(e) => SetPassword(e.target.value)} value={password} placeholder="Password"/>
                     
-                    <button className="submit-button" onClick={validateForm}>Submit</button>
+                    <button className="submit-button" onClick={validateForm()}>Submit</button>
                     
                     
 
