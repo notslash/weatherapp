@@ -15,11 +15,6 @@ const Profile = () => {
 
     const navigate=useNavigate()
 
-    function validateForm(){
-        if (password.length<8){
-            alert("characters less than 8")
-        }
-    }
     
     
     return (
@@ -50,10 +45,10 @@ const Profile = () => {
                     console.log("hello")
                 }}>
                     
-                    <input type="text" onChange={(e) => setusername(e.target.value)} value={username} placeholder="Username"/>
-                    <input type="password" onChange={(e) => SetPassword(e.target.value)} value={password} placeholder="Password"/>
+                    <input type="text" required onChange={(e) => setusername(e.target.value)} value={username} placeholder="Username"/>
+                    <input type="password" minLength= "8" required onChange={(e) => SetPassword(e.target.value)} value={password} placeholder="Password"/>
                     
-                    <button className="submit-button" onClick={validateForm()}>Submit</button>
+                    <button className="submit-button">Submit</button>
                     
                     
 

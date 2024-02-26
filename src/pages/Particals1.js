@@ -6,26 +6,26 @@ const Particals1=()=>{
             <div className="grid_cotainer">
                 <div className="grid_item">
                     <div className="color_level1"></div>
-                    0-0.04 ppm
+                    0-0.54 ppm
                 </div>
                 <div className="grid_item">
                 <div className="color_level2"></div>
-                0.04-0.07 ppm
+                0.55-0.154 ppm
                 </div>
                 <div className="grid_item">
                 <div className="color_level3"></div>
-                    0.07-0.15 ppm
+                    0.255-0.354 ppm
                     </div>
                 <div className="grid_item">
                 <div className="color_level4"></div>
-                    0.15-0.3 ppm
+                    0.355-0.424 ppm
                 </div>
                 <div className="grid_item">Normal Partical levels</div>
-                <div className="grid_item">You may expience uncomfortable breathing and nausea</div>
-                <div className="grid_item">You may expience symptoms of troubled breathing</div>
-                <div className="grid_item">You may expience symptoms inflassion within your lungs</div>
+                <div className="grid_item">You may expience uncomfortable ichyness in the eyes and nose</div>
+                <div className="grid_item">You may expience symptoms of swealing in the eyes</div>
+                <div className="grid_item">You may expience symptoms of nausea and dizzyness</div>
                 <div className="grid_item">We would say you could stay in these conditions for more then 8 hours</div>
-                <div className="grid_item">We recommend you do not stay in these conditions for more then 8 hours</div>
+                <div className="grid_item">We recommend you do not stay in these conditions for more then 3 hours</div>
                 <div className="grid_item">We recommend you do not stay in these conditions for more then 1 hour</div>
                 <div className="grid_item">We recommend you do not stay in these conditions for more then 15 minutes</div>
 

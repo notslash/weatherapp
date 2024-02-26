@@ -1,0 +1,13 @@
+.privacy_title{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.privacy_text{
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 80px;
+    font-size: 20px;
+}

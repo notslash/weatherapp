@@ -12,6 +12,8 @@ import Ammonia from "./pages/Ammonia";
 import Particals2 from "./pages/Particals2";
 import Particals1 from "./pages/Particals1";
 import Sulphur from "./pages/Sulphur"
+import AboutUs from "./pages/AboutUs";
+import Privacy from "./pages/Privacy";
 const Router=()=>{
     return(
         <BrowserRouter>
@@ -28,7 +30,8 @@ const Router=()=>{
             <Route path="Particals2" element={<Particals2/>}/>
             <Route path="Particals1" element={<Particals1/>}/>
             <Route path="Sulphur" element={<Sulphur/>}/>
-
+            <Route path="AboutUs" element ={<AboutUs/>}/>
+            <Route path="Privacy" element={<Privacy/>}/>
             
         </Routes>
         </BrowserRouter>

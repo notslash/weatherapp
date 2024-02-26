@@ -5,19 +5,19 @@ const Ozone=()=>{
             <div className="grid_cotainer">
                 <div className="grid_item">
                     <div className="color_level1"></div>
-                    0-0.06 ppm
+                    0-0.067 ppm
                 </div>
                 <div className="grid_item">
                 <div className="color_level2"></div>
-                0.06-0.1 ppm
+                0.067-0.100 ppm
                 </div>
                 <div className="grid_item">
                 <div className="color_level3"></div>
-                    0.1-0.14 ppm
+                    0.100-0.140 ppm
                     </div>
                 <div className="grid_item">
                 <div className="color_level4"></div>
-                    0.14-0.2 ppm
+                    0.140-0.187 ppm
                 </div>
                 <div className="grid_item">Normal Ozone levels</div>
                 <div className="grid_item">You may expience uncomfortable nausea</div>

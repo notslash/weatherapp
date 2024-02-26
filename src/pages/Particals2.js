@@ -5,19 +5,19 @@ const Particals2=()=>{
             <div className="grid_cotainer">
                 <div className="grid_item">
                     <div className="color_level1"></div>
-                    0-0.04 ppm
+                    0-0.024 ppm
                 </div>
                 <div className="grid_item">
                 <div className="color_level2"></div>
-                0.04-0.07 ppm
+                0.024-0.036 ppm
                 </div>
                 <div className="grid_item">
                 <div className="color_level3"></div>
-                    0.07-0.15 ppm
+                    0.036-0.47 ppm
                     </div>
                 <div className="grid_item">
                 <div className="color_level4"></div>
-                    0.15-0.3 ppm
+                    0.47-0.58 ppm
                 </div>
                 <div className="grid_item">Normal Partical levels</div>
                 <div className="grid_item">You may expience uncomfortable breathing and nausea</div>

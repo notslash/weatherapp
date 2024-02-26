@@ -5,19 +5,19 @@ const Nitrogen=()=>{
             <div className="grid_cotainer">
                 <div className="grid_item">
                     <div className="color_level1"></div>
-                    0-0.04 ppm
+                    0-0.135 ppm
                 </div>
                 <div className="grid_item">
                 <div className="color_level2"></div>
-                0.04-0.07 ppm
+                0.135-0.200 ppm
                 </div>
                 <div className="grid_item">
                 <div className="color_level3"></div>
-                    0.07-0.15 ppm
+                    0.200-0.267 ppm
                     </div>
                 <div className="grid_item">
                 <div className="color_level4"></div>
-                    0.15-0.3 ppm
+                    0.270-0.334 ppm
                 </div>
                 <div className="grid_item">Normal Nitrogen levels</div>
                 <div className="grid_item">You may expience uncomfortable breathing and nausea</div>

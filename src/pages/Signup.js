@@ -15,13 +15,7 @@ const Signup = () => {
     const navigate=useNavigate()
 
 
-    function valid_sign(){
-        if (password2.length<8 & password.length<8){
-            alert("characters less than 8")
-            SetPassword(null)
-            SetPassword2(null)
-        }
-    }
+    
 
     
     return (
@@ -53,10 +47,10 @@ const Signup = () => {
                     }
 
                 }}>
-                    <input type="text" onChange={(e) => setusername(e.target.value)} value={username} placeholder="Username"/>
-                    <input type="password" onChange={(e) => SetPassword(e.target.value)} value={password} placeholder="Passsword" />
-                    <input type="password" onChange={(e) => SetPassword2(e.target.value)} value={password2} placeholder="Password" />
-                    <input type="submit" value="submit"/>
+                    <input type="text" required onChange={(e) => setusername(e.target.value)} value={username} placeholder="Username"/>
+                    <input type="password" minLength= "8" required onChange={(e) => SetPassword(e.target.value)} value={password} placeholder="Passsword" />
+                    <input type="password" minLength= "8" required onChange={(e) => SetPassword2(e.target.value)} value={password2} placeholder="Password" />
+                    <input type="submit" value="submit" />
 
                 </form>
             </div>
